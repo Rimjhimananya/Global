@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce_website</title>
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">4
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+</head>
+<body>
+
+ 
+
+   <!-- header section start -->
+
+
+
+<header class="header">
+    <a href="#" class="logo"><i class="fa-solid fa-shop"></i> global</a> 
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <!-- <a href="#categories">categories</a> -->
+        <a href="#review">review</a>
+        <!-- <a href="#blog">blogs</a> -->
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id = "menu-btn"></div>
+        <div class="fas fa-search" id = "search-btn"></div>
+        <div class="fas fa-shopping-cart" id = "cart-btn"></div>
+        <div class="fas fa-user" id = "login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="Search here">
+        <label for="search-box" class="fas fa-search"></label>
+
+    </form>
+
+
+    
+   
+
+
+
+
+
+    <div class="shopping-cart" id="itemContainer">
+        
+        <div class="total" id="total"></div>
+        <a href="#" class="btn">checkout</a>
+    </div> 
+
+
+
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>Forget password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create here</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+
+
+<!-- header section ends -->
+
+<!-- home section start -->
+<section class="home" id="home">
+    <div class="content">
+        <H3>Transforming Ordinary Days <span>into Fairy Tale Adventures</span> with your Royal Wardrobe </H3>
+        <p>Welcome to global your one-stop destination for enchanting dresses that turn ordinary moments into magical adventures. At global we believe in the power of imagination, and what better way to inspire it than through the world of beautiful, whimsical dresses fit for princesses and Barbies alike.</p>
+        <a href="#" class="btn"> Shop now</a>
+
+    </div>
+</section>
+
+<!-- home section end -->
+
+<!-- features section starts -->
+<section class="features" id="features">
+
+    <h1 class="heading">our <span> features</span></h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images (3).jpeg" alt="">
+            <h3>Premium Materials and Craftsmanship</h3>
+            <p>Emphasize the use of high-quality materials and superior craftsmanship in the creation of your dresses. Describe the attention to detail and care that goes into each garment, ensuring that they are not just clothing items but works of art</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="images.png" alt="">
+            <h3>Home delivery</h3>
+            <p>"At global, we understand the importance of convenience and safety. That's why we offer hassle-free home delivery services to make your shopping experience even more delightful. Whether you're looking for princess dresses, Barbie outfits, or any other product from our collection, we've got you covered.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="4786407-200.png" alt="">
+            <h3>Easy Payment gateway</h3>
+            <p>At global, we understand that making a purchase should be effortless and secure. That's why we've integrated a user-friendly payment gateway that simplifies the checkout process. With just a few clicks, you can securely complete your transaction, whether you're shopping for the latest princess dresses or stylish Barbie outfits.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+    </div>
+
+
+
+
+</section>
+
+<!-- features secction end -->
+
+<!-- product section start -->
+<section class="products" id="products">
+    <h1 class="heading">our <span>products</span></h1>
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="p1.jpeg" alt="">
+                <h3>Red glitter Gown</h3>
+                <div class="price">$300/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Red glitter Gown','$300','p1.jpeg')">add to cart</a>
+                
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="p2.webp" alt="">
+                <h3>Anarkali Gown</h3>
+                <div class="price">$250/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Anarkali Gown','$250','p2.webp')">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="p3.jpg" alt="">
+                <h3>Golden fur Gown</h3>
+                <div class="price">$400/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Golden fur Gown','$400','p3.jpg')" >add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="105174-morilee.jpeg" alt="">
+                <h3>White Wedding Dress</h3>
+                <div class="price">$200/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('White Wedding Dress','$200','105174-morilee.jpeg')">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="p4.webp" alt="">
+                <h3>heaven flower wedding Gown</h3>
+                <div class="price">$300/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('heaven flower wedding Gown','$300','p4.webp')">add to cart</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="images (1).jpeg" alt="">
+                <h3>Pink Barbie Dress</h3>
+                <div class="price">$300/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Pink Barbie Dress','$300','images (1).jpeg')">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="p5.jpeg" alt="">
+                <h3>white gown</h3>
+                <div class="price">$200/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('white gown','$200','p5.jpeg')">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="p6.jpg" alt="">
+                <h3>Royal blue glitter Gown</h3>
+                <div class="price">$300/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Royal blue glitter Gown','$300','p6.jpg')" >add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="images (2).jpeg" alt="">
+                <h3>Blue Princess Dress</h3>
+                <div class="price">$200/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Blue Princess Dress','$200','images (2).jpeg')">add to cart</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="p7.jpeg" alt="">
+                <h3>Black Gown</h3>
+                <div class="price">$150/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="#" class="btn" onclick="addItemToLocalStorage('Black Gown','$150','p7.jpeg')">add to cart</a>
+            </div>
+
+        </div>
+    </div>
+    
+</section>
+
+<!-- product section end -->
+    
+<!-- review section start -->
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="rev1.avif" alt="">
+                <p>find a very good quality product my daughter was really happy</p>
+                <h3>John Nobar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="rev3.avif" alt="">
+                <p>Loved the product</p>
+                <h3>John Nobar</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="rev2.avif" alt="">
+                <p>find a very good quality product i was were much confident wearing that dress.</p>
+                <h3>Aenna Sorbe</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- review section end -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>global <i class="fa-solid fa-shop"></i></h3>
+            <p>email-id : global221@gmail.com</p>
+            <p>contact no:3452687654</p>
+        </div>
+         <div class="box">
+            <p>Address : xyz 11/7w near earth </p>
+            <p>          in universe</p>
+            
+         </div>
+    </div>
+</section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js">
+    
+
+</script>
+</body>
+</html>
